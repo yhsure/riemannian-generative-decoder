@@ -1,4 +1,4 @@
-# Riemannain generative decoder: <br>*learning representations on manifolds*
+# Riemannian generative decoder: <br>*simpler representation learning on manifolds*
 
 ![RGD logo](data/frontpage_rgd.png)
 
@@ -10,7 +10,8 @@
 
 > **Riemannian generative decoder**<br>
 > Andreas Bjerregaard, Søren Hauberg and Anders Krogh<br>
-> <a href="http://arxiv.org/abs/" target="_blank">http://arxiv.org/abs/ </a> <br>
+> *Generative AI and Biology, ICML 2025*<br>
+> <a href="http://arxiv.org/abs/" target="_blank">*http://arxiv.org/abs/* </a> <br>
 > 
 > **Abstract:**
 > Riemannian representation learning typically relies on approximating densities on chosen manifolds. This involves optimizing difficult objectives, potentially harming models. To completely circumvent this issue, we introduce the Riemannian generative decoder which finds manifold-valued maximum likelihood latents with a Riemannian optimizer while jointly training a decoder network. By discarding the encoder, we vastly simplify the manifold constraint compared to current approaches which can often only handle few specific manifolds. We validate our approach on three case studies — a synthetic branching diffusion process, human migrations inferred from mitochondrial DNA, and cells undergoing a cell division cycle — each showing that learned representations respect the prescribed geometry and capture intrinsic non-Euclidean structure. Our method requires only a decoder, is compatible with existing architectures, and yields interpretable latent spaces aligned with data geometry. 
