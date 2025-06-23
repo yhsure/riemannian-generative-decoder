@@ -7,8 +7,9 @@ chumby/
 *.joblib
 *.txt 
 *.csv
-*.tsv
+# *.tsv
 *.fasta
+*.h5ad
 
 geoopt_old/
 
