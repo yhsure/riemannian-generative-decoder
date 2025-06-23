@@ -10,7 +10,6 @@ chumby/
 *.tsv
 *.fasta
 
-geoopt/
 geoopt_old/
 
 # Byte-compiled / optimized / DLL files
