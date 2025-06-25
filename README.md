@@ -4,39 +4,38 @@
 
 <div align="center">
 <a href="https://yhsure.github.io/riemannian-generative-decoder/" target="_blank"><img src=https://img.shields.io/badge/Website-github.io-green.svg></a>
-<a href="https://arxiv.org/abs/" target="_blank"><img src=https://img.shields.io/badge/arXiv-Paper-b5212f.svg?logo=arxiv></a>
+<a href="https://arxiv.org/abs/2506.19133" target="_blank"><img src=https://img.shields.io/badge/arXiv-Paper-b5212f.svg?logo=arxiv></a>
 <a href="https://huggingface.co/datasets/yhsure/riemannian-generative-decoder/tree/main" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Data-27b3b4.svg></a>
 </div><br>
 
 > **Riemannian generative decoder**<br>
 > Andreas Bjerregaard, Søren Hauberg and Anders Krogh<br>
 > *Generative AI and Biology, ICML 2025*<br>
-> <a href="http://arxiv.org/abs/" target="_blank">*http://arxiv.org/abs/* </a> <br>
+> <a href="http://arxiv.org/abs/2506.19133" target="_blank">*http://arxiv.org/abs/2506.19133*</a> <br>
 > 
 > **Abstract:**
 > Riemannian representation learning typically relies on approximating densities on chosen manifolds. This involves optimizing difficult objectives, potentially harming models. To completely circumvent this issue, we introduce the Riemannian generative decoder which finds manifold-valued maximum likelihood latents with a Riemannian optimizer while jointly training a decoder network. By discarding the encoder, we vastly simplify the manifold constraint compared to current approaches which can often only handle few specific manifolds. We validate our approach on three case studies — a synthetic branching diffusion process, human migrations inferred from mitochondrial DNA, and cells undergoing a cell division cycle — each showing that learned representations respect the prescribed geometry and capture intrinsic non-Euclidean structure. Our method requires only a decoder, is compatible with existing architectures, and yields interpretable latent spaces aligned with data geometry. 
 
 ## Running the project
-To reproduce results from the paper, follow the steps below. All notebooks will automatically fetch any required data. 
+To reproduce results and figures from the paper, follow these steps. All notebooks will automatically fetch required data.
 
-
-0. **Clone the repo (with submodules)**  
+1. **Setup environment**
    ```bash
    git clone --recurse-submodules https://github.com/fvk220/riemannian-generative-decoder.git
+   pip install -e data/geoopt
    ```
-   and install the geoopt submodule: `pip install -e data/geoopt`
 
-1. **Cell cycle in human fibroblasts** [1]
-   - Run `1) CellCycle.ipynb` to reproduce figures.
+2. **Cell cycle in human fibroblasts [1]**
+   - Notebook: `1) CellCycle.ipynb`
 
-2. **Synthetic branching diffusion process** [2]
-   - Run `2) BranchingDiffusion.ipynb` to reproduce figures.
+3. **Synthetic branching diffusion process [2]**
+   - Notebook: `2) BranchingDiffusion.ipynb`
 
-3. **Human mitochondrial DNA** [3]
-   - Run `3) hmtDNA*.ipynb` notebooks to reproduce figures.  
-   - For instructions on scraping new (updated) mitochondrial sequences, see the below section [Scraping new mitochondrial sequences](#scraping-new-mitochondrial-sequences).
+4. **Human mitochondrial DNA [3]**
+   - Notebooks: `3) hmtDNA*.ipynb`
+   - For updating mitochondrial sequences, refer to [Scraping new mitochondrial sequences](#scraping-new-mitochondrial-sequences).
 
-All the used data can also be downloaded from [🤗 HuggingFace](https://huggingface.co/datasets/yhsure/riemannian-generative-decoder/tree/main) to avoid cloning the repo.
+All the used data can also be downloaded directly from [🤗 HuggingFace](https://huggingface.co/datasets/yhsure/riemannian-generative-decoder/tree/main) without cloning the repository.
 
 
 ### Scraping new mitochondrial sequences
@@ -74,17 +73,20 @@ The code has been tested with Python 3.11.11 using the packages from `requiremen
 [haplogrep]: https://haplogrep.readthedocs.io/
 
 ## Acknowledgements
-We thank the developers of *geoopt* [5] and *haplogrep3* [4], the *QuickGO* [6] and *MITOMAP* projects [3] as well as Riba *et al.* [1] and Mathieu *et al.* [2] for making their software and data publicly available.
+We thank the developers of *geoopt* [5] and *haplogrep3* [4], the *QuickGO* [6] and *MITOMAP* projects [3], as well as Riba *et al.* [1] and Mathieu *et al.* [2] for making their software and data publicly available.
 
 We further thank Viktoria Schuster, Iñigo Prada-Luengo, Yan Li, Adrián Sousa-Poza and Valentina Sora for helpful discussions. This work was funded by the Novo Nordisk Foundation (NNF) through the Center for Basic Machine Learning in Life Science (NNF grant <span style="word-break: break-all;">NNF20OC0062606</span>) and the Pioneer Centre for AI (DNRF grant number P1). A.K. was further supported by NNF grants <span style="word-break: break-all;">NNF20OC0059939</span> and <span style="word-break: break-all;">NNF20OC0063268</span>. 
 
 
 ## Citation
+<!-- Please consider citing us if you found anything useful!  -->
 ```bibtex
 @inproceedings{bjerregaard2025riemannian,
   title={Riemannian generative decoder},
   author={Bjerregaard, Andreas and Hauberg, S{\o}ren and Krogh, Anders},
-  booktitle={ICML 2025 Generative AI and Biology (GenBio) Workshop}
+  booktitle={ICML 2025 Workshop on Generative AI and Biology},
+  month     = {July},
+  year      = {2025}
 }
 ```
 
