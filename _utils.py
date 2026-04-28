@@ -1,3 +1,5 @@
+"""Utility functions for the Riemannian Generative Decoder."""
+
 import torch
 import matplotlib.pyplot as plt
 import matplotlib

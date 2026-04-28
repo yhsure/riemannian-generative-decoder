@@ -4,14 +4,17 @@
 
 <div align="center">
 <a href="https://yhsure.github.io/riemannian-generative-decoder/" target="_blank"><img src=https://img.shields.io/badge/Website-github.io-green.svg></a>
+<a href="https://openreview.net/forum?id=vuPMXg1FDT" target="_blank"><img src=https://img.shields.io/badge/OpenReview-TMLR-8a2be2.svg></a>
 <a href="https://arxiv.org/abs/2506.19133" target="_blank"><img src=https://img.shields.io/badge/arXiv-Paper-b5212f.svg?logo=arxiv></a>
 <a href="https://huggingface.co/datasets/yhsure/riemannian-generative-decoder/tree/main" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Data-27b3b4.svg></a>
 </div><br>
 
 > **Riemannian generative decoder**<br>
 > Andreas Bjerregaard, Søren Hauberg and Anders Krogh<br>
-> *Generative AI and Biology, ICML 2025*<br>
-> <a href="http://arxiv.org/abs/2506.19133" target="_blank">*http://arxiv.org/abs/2506.19133*</a> <br>
+> *Transactions on Machine Learning Research, 2026*<br>
+> *J2C Certification; planned presentation for ICML 2026, July 6-11*<br>
+> Previously presented at *Generative AI and Biology, ICML 2025*<br>
+> <a href="https://openreview.net/forum?id=vuPMXg1FDT" target="_blank">*https://openreview.net/forum?id=vuPMXg1FDT*</a> <br>
 > 
 > **Abstract:**
 > Riemannian representation learning typically relies on approximating densities on chosen manifolds. This involves optimizing difficult objectives, potentially harming models. To completely circumvent this issue, we introduce the Riemannian generative decoder which finds manifold-valued maximum likelihood latents with a Riemannian optimizer while jointly training a decoder network. By discarding the encoder, we vastly simplify the manifold constraint compared to current approaches which can often only handle few specific manifolds. We validate our approach on three case studies — a synthetic branching diffusion process, human migrations inferred from mitochondrial DNA, and cells undergoing a cell division cycle — each showing that learned representations respect the prescribed geometry and capture intrinsic non-Euclidean structure. Our method requires only a decoder, is compatible with existing architectures, and yields interpretable latent spaces aligned with data geometry. 
@@ -81,12 +84,15 @@ We further thank Viktoria Schuster, Iñigo Prada-Luengo, Yan Li, Adrián Sousa-P
 ## Citation
 <!-- Please consider citing us if you found anything useful!  -->
 ```bibtex
-@inproceedings{bjerregaard2025riemannian,
-  title={Riemannian generative decoder},
-  author={Bjerregaard, Andreas and Hauberg, S{\o}ren and Krogh, Anders},
-  booktitle={ICML 2025 Workshop on Generative AI and Biology},
-  month     = {July},
-  year      = {2025}
+@article{
+bjerregaard2026riemannian,
+title={Riemannian Generative Decoder},
+author={Andreas Bjerregaard and S{\o}ren Hauberg and Anders Krogh},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2026},
+url={https://openreview.net/forum?id=vuPMXg1FDT},
+note={J2C Certification}
 }
 ```
 

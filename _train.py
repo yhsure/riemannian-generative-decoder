@@ -1,3 +1,5 @@
+"""Training utilities for the Riemannian Generative Decoder."""
+
 import torch 
 import copy
 from datetime import datetime
