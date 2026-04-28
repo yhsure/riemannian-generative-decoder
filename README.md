@@ -13,7 +13,6 @@
 > Andreas Bjerregaard, Søren Hauberg and Anders Krogh<br>
 > *Transactions on Machine Learning Research, 2026*<br>
 > *J2C Certification; planned presentation for ICML 2026, July 6-11*<br>
-> Previously presented at *Generative AI and Biology, ICML 2025*<br>
 > <a href="https://openreview.net/forum?id=vuPMXg1FDT" target="_blank">*https://openreview.net/forum?id=vuPMXg1FDT*</a> <br>
 > 
 > **Abstract:**
