@@ -5,7 +5,7 @@
 <div align="center">
 <a href="https://yhsure.github.io/riemannian-generative-decoder/" target="_blank"><img src=https://img.shields.io/badge/Website-github.io-green.svg></a>
 <a href="https://openreview.net/forum?id=vuPMXg1FDT" target="_blank"><img src=https://img.shields.io/badge/OpenReview-TMLR-8a2be2.svg></a>
-<a href="https://arxiv.org/abs/2506.19133" target="_blank"><img src=https://img.shields.io/badge/arXiv-Paper-b5212f.svg?logo=arxiv></a>
+<!--a href="https://arxiv.org/abs/2506.19133" target="_blank"><img src=https://img.shields.io/badge/arXiv-Paper-b5212f.svg?logo=arxiv></a-->
 <a href="https://huggingface.co/datasets/yhsure/riemannian-generative-decoder/tree/main" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Data-27b3b4.svg></a>
 </div><br>
 
